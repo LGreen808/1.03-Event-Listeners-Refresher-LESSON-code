@@ -34,6 +34,14 @@ const dblCard = document.getElementById('dblCard')
 /* --------------------------------
    Demo 3: Keypress (show key/code)
 --------------------------------- */
+const kbKey = document.getElementById('kbKey')
+const kbCode = document.getElementById('kbCode')
+
+document.addEventListener('keydown', (e) => {
+   kbKey.textContent = e.key
+}
+
+/*Any key on a keyboard will activate keydown */
 
 
 /* ----------------------------------------
