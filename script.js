@@ -39,7 +39,7 @@ const kbCode = document.getElementById('kbCode')
 
 document.addEventListener('keydown', (e) => {
    kbKey.textContent = e.key
-}
+})
 
 /*Any key on a keyboard will activate keydown */
 
@@ -65,6 +65,17 @@ document.getElementById('btnClear').addEventListener('click', () => {
    - Add event listeners for mouseenter and mouseleave on the card
    - On mouseenter: add a highlight class, increase the counter, and show the count in #out
    - On mouseleave: remove the highlight class and show a message in #out
+*/
+let hoverCount = 0 
+const hoverCard = document.getElementById('hoverCard')
+  hoverCard.addEventListener('mouseenter' () => {
+   hoverCount++
+   hoverCard.classList.add('activated')
+   render(`<p>You hovered over the card ${hoverCount} times</p>`)
+  })
+
+
+/*++++++++
 
    Option B — Scroll Progress Bar
    - Add a small Bootstrap progress bar element at the very top of the page
