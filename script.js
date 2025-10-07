@@ -68,11 +68,11 @@ document.getElementById('btnClear').addEventListener('click', () => {
 */
 let hoverCount = 0 
 const hoverCard = document.getElementById('hoverCard')
-  hoverCard.addEventListener('mouseenter' () => {
+  hoverCard.addEventListener('mouseenter', () => {
    hoverCount++
    hoverCard.classList.add('activated')
    render(`<p>You hovered over the card ${hoverCount} times</p>`)
-  })
+  });
 
 
 /*++++++++
